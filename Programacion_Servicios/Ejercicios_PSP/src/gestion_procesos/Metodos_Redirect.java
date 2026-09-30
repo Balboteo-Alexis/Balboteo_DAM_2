@@ -32,6 +32,9 @@ public class Metodos_Redirect {
 		Scanner teclado = new Scanner(System.in);
 		
 		
+		
+		
+		
 
 		boolean comprobador = true;
 
