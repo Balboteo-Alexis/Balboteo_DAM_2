@@ -41,24 +41,22 @@ public class Metodos_Redirect {
 
 		while (comprobador) {
 
-			boolean subComprobador = true;
+			boolean comprobador2 = true;
 
 			System.out.println(
-					"Introduzca todos los argumentos que quiera, escriba un espacio cuando no quiera escribir más.");
+					"Introduzca todos los argumentos que quiera, pulse Enter para terminar el comando.");
 
-			while (subComprobador) {
+			while (comprobador2) {
 
 				System.out.print("Argumento: ");
 				listaArgumentos.add(teclado.nextLine());
 
-//						System.out.println(listaArgumentos.getLast());
 
 				if (listaArgumentos.getLast().isBlank()) {
-					subComprobador = false;
+					comprobador2= false;
 				}
 
 			}
-			
 			
 
 			for (int i = 0; i < listaArgumentos.size(); i++) {
