@@ -7,3 +7,13 @@
 2026-09-30 17:54:09.841: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-09-30 17:54:09.841: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-09-30 17:54:18.271: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-02 17:49:14.777: [INFO] CurrentProfilePath: C:\Users\dam2\Documents\DAM2\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-02 17:49:14.777: [INFO] Profiles total count: 1
+2026-10-02 17:49:14.777: [INFO] Profile: name=Perfil 1 path=C:\Users\dam2\Documents\DAM2\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-30T17:54:10.379Z
+2026-10-02 17:49:14.777: [INFO] LastUsedProfileDir: C:\Users\dam2\Documents\DAM2\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-02 17:49:14.777: [INFO] MostRecentlyActiveProfile: name=Perfil 1 path=C:\Users\dam2\Documents\DAM2\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-09-30T17:54:10.379Z
+2026-10-02 17:49:14.777: [INFO] OnDoneLoading sync enabled: 0
+2026-10-02 17:49:14.777: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-02 17:49:14.777: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-02 17:49:14.777: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-02 17:49:18.696: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

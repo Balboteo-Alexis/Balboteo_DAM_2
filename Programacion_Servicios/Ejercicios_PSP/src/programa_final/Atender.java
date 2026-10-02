@@ -12,6 +12,11 @@
 
 package programa_final;
 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Atender {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -19,7 +24,7 @@ public class Atender {
 		// Obtener nombre empleado desde args
 
 		if (args.length < 1) {
-			System.out.println("Debes indicar una IP o dominio como argumento.");
+			System.out.println("Debes indicar el nombre del empleado como argumento.");
 			return;
 		}
 
@@ -29,50 +34,65 @@ public class Atender {
 
 		String[] nombres = { "Juan", "Joel", "Pedro", "María", "Curro", "Paco", "Antonio" };
 
-		
 		// Repetir 10 veces
-		
-		for(int i=0; i<10; i++) {
-			
+
+		for (int i = 0; i < 10; i++) {
+
 			// Elegir cliente aleatorio
-			String cliente = nombres[(int) (Math.random()*7)];
-			
+			String cliente = nombres[(int) (Math.random() * nombres.length)];
+
 			// Generar tiempo aleatorio
-			
-			int tiempo = (int) (Math.random()*5);
-			
-			
-			// Mostrar mensaje  12/10/26 10:43 Federico atendió al cliente Pepe Perez durante 2 minutos
-			
-			System.out.println(empleado + " atendió al cliente " + cliente + " durante " + tiempo +" segundos");
-			
+
+			int tiempo = (int) ((Math.random() * 100)+20);
+
+			// Mostrar mensaje 12/10/26 10:43 Federico atendió al cliente Pepe Perez durante
+			// 2 minutos
+
+			System.out.println(empleado + " atendió al cliente " + cliente + " durante " + tiempo + " segundos");
+
 			// Esperar
-			
+
 			try {
-				
-			    Thread.sleep(tiempo * 1000);
-			    
-			} catch (InterruptedException e) {e.printStackTrace();}
-			
+
+				Thread.sleep(tiempo * 1000);
+
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+
 			// Llamar a función para guardar en fichero
-			
-			
-			
-			
-			
-			
-			
-			
+
+			guardarEnFichero(empleado, cliente, tiempo);
+
 		}
-		
-        
-        
-        // Mostrar mensaje
-        // Esperar
-        // Llamar a función para guardar en fichero
-		
-		
-		
+
+
+
+	}
+
+	public static void guardarEnFichero(String empleado, String cliente, int tiempo) {
+
+	    try {
+
+	        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yy HH:mm");
+
+	        String fechaHora = LocalDateTime.now().format(formato);
+
+	        FileWriter fichero = new FileWriter("atenciones.txt", true);
+
+	        fichero.write(
+	            fechaHora + " " +
+	            empleado + " atendió al cliente " +
+	            cliente + " durante " +
+	            tiempo + " segundos\n"
+	        );
+
+	        fichero.close();
+
+	    } catch (IOException e) {
+
+	        e.printStackTrace();
+	    }
 	}
 
 }

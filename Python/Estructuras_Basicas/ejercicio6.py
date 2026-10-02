@@ -5,13 +5,13 @@ correctamente."""
 
 
 
-CONTRASEÑA = 12345
+contrasena = 12345
 
 num = int(input("Dime la contraseña: "))
 
 
 
-while num != CONTRASEÑA:
+while num != contrasena:
     print("Error")
     
     num = int(input("Dime la contraseña: "))
