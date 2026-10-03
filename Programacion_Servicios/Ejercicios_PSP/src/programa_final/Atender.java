@@ -43,12 +43,12 @@ public class Atender {
 
 			// Generar tiempo aleatorio
 
-			int tiempo = (int) ((Math.random() * 100)+20);
+			int tiempo = (int) ((Math.random() * 10)+0);
 
 			// Mostrar mensaje 12/10/26 10:43 Federico atendió al cliente Pepe Perez durante
 			// 2 minutos
 
-			System.out.println(empleado + " atendió al cliente " + cliente + " durante " + tiempo + " segundos");
+			System.out.println(empleado + " atendio al cliente " + cliente + " durante " + tiempo + " segundos");
 
 			// Esperar
 

@@ -28,3 +28,9 @@
 02/10/26 20:21 Laura atendió al cliente Paco durante 0 segundos
 02/10/26 20:21 Federico atendió al cliente Joel durante 3 segundos
 02/10/26 20:21 Federico atendió al cliente Pedro durante 0 segundos
+03/10/26 18:49 Antonio atendió al cliente Joel durante 1 segundos
+03/10/26 18:50 Laura atendió al cliente Joel durante 3 segundos
+03/10/26 18:50 Federico atendió al cliente Paco durante 5 segundos
+03/10/26 18:50 Laura atendió al cliente Pedro durante 2 segundos
+03/10/26 18:50 Antonio atendió al cliente Paco durante 6 segundos
+03/10/26 18:50 Antonio atendió al cliente Joel durante 4 segundos
