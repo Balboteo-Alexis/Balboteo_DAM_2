@@ -2,6 +2,9 @@ import './style.css'
 import heroImg from './assets/hero.png'
 import typescriptLogo from './assets/typescript.svg'
 import viteLogo from './assets/vite.svg'
+import "./topics/01-tipos-basicos"
+import "./topics/02-objetos-interfaz"
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
@@ -11,7 +14,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <img src="${viteLogo}" class="vite" alt="Vite logo" />
   </div>
   <div>
-    <h1>Empecemos</h1>
+    <h1>Hola, mi nombre es Alexis</h1>
     <p>Edita<code>src/main.ts</code> y guarda para testearlo <code>HMR</code></p>
   </div>
 </section>

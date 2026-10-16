@@ -1,70 +1,105 @@
 package crud_clientes;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Principal {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		Scanner teclado = new Scanner(System.in);
-		int opcion ;
-		
-		do {
+        Scanner sc = new Scanner(System.in);
 
-            System.out.println("\n=== MENÚ ===");
-            System.out.println("1. Grabar un cliente");
-            System.out.println("2. Buscar por nombre");
+        int opcion = 0;
+
+        do {
+
+            System.out.println("\n===== GESTION DE CLIENTES =====");
+            System.out.println("1. Dar de alta cliente");
+            System.out.println("2. Buscar cliente");
             System.out.println("3. Actualizar saldo");
-            System.out.println("4. Borrar");
-            System.out.println("0. Salir");
-            System.out.println("===============\n");
+            System.out.println("4. Borrar cliente");
+            System.out.println("5. Listar clientes");
+            System.out.println("6. Salir");
+            System.out.print("Elige una opcion: ");
 
-            System.out.print("Elige una opción: ");
-            opcion = teclado.nextInt();
-            teclado.nextLine();
+            try {
+                opcion = Integer.parseInt(sc.nextLine());
 
-            switch (opcion) {
+                switch (opcion) {
 
-            case 1:
-            	
-                System.out.println("Dame los datos para grabar al cliente:");
-                System.out.print("Nombre: ");
-                String nombre = teclado.nextLine();
-                System.out.print("Email: ");
-                String email = teclado.nextLine();
-                System.out.print("Saldo: ");
-                double saldo = teclado.nextDouble();
-                
-                try {
-					Dao.grabar(nombre, email, saldo);
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-                
-                break;
+                    case 1:
+                        System.out.print("Nombre: ");
+                        String nombre = sc.nextLine();
 
-            case 2:
-            	
-            	
-            	
-            	
-            	
-            	
-            	
-                break;
+                        System.out.print("Email: ");
+                        String email = sc.nextLine();
 
-            case 0:
-                System.out.println("Programa terminado.");
-                break;
+                        System.out.print("Saldo inicial: ");
+                        double saldo = Double.parseDouble(sc.nextLine());
 
-            default:
-                System.out.println("Opción incorrecta.");
+                        Dao.grabar(nombre, email, saldo);
+                        break;
 
+                    case 2:
+                        System.out.print("Nombre del cliente: ");
+                        nombre = sc.nextLine();
+
+                        Cliente buscado = Dao.buscar(nombre);
+
+                        if (buscado != null) {
+                            System.out.println(buscado);
+                        } else {
+                            System.out.println("Cliente no encontrado.");
+                        }
+                        break;
+
+                    case 3:
+                        System.out.print("Nombre del cliente: ");
+                        nombre = sc.nextLine();
+
+                        System.out.print("Cantidad a añadir: ");
+                        double cantidad = Double.parseDouble(sc.nextLine());
+
+                        Dao.actualizarSaldo(nombre, cantidad);
+                        break;
+
+                    case 4:
+                        System.out.print("Nombre del cliente a borrar: ");
+                        nombre = sc.nextLine();
+
+                        Dao.borrar(nombre);
+                        break;
+
+                    case 5:
+                        ArrayList<Cliente> clientes = Dao.listar();
+
+                        if (clientes.isEmpty()) {
+                            System.out.println("No hay clientes registrados.");
+                        } else {
+                            for (Cliente cliente : clientes) {
+                                System.out.println(cliente);
+                            }
+                        }
+                        break;
+
+                    case 6:
+                        System.out.println("Saliendo del programa...");
+                        break;
+
+                    default:
+                        System.out.println("Opcion no valida.");
+                }
+
+            } catch (SQLException e) {
+                System.out.println("Error de base de datos: " + e.getMessage());
+
+            } catch (NumberFormatException e) {
+                System.out.println("Debes introducir un numero valido.");
             }
 
-        } while (opcion != 0);
+        } while (opcion != 6);
 
-	}
-
+        sc.close();
+    }
 }
