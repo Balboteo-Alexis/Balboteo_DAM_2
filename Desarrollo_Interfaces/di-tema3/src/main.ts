@@ -6,16 +6,17 @@ import './topics/di35'
 import './topics/di36'
 import './topics/di37'
 import './topics/di38'
-import './topics/di39'
-
+import './topics/t9modulo-alumnos'
 
 document.documentElement.lang = 'es'
 document.title = 'Alexis Balboteo González · 2º DAM'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
+document.querySelector<HTMLDivElement>('#app')!.innerHTML = String.raw`
   <main class="portada">
     <header class="cabecera">
-      <span class="marca" aria-label="Alexis Balboteo">Balboteo<span aria-hidden="true">.</span></span>
+      <span class="marca" aria-label="Alexis Balboteo">
+        Balboteo<span aria-hidden="true">.</span>
+      </span>
       <span class="curso">2º DAM</span>
     </header>
 
@@ -26,6 +27,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
         Aprendiendo a crear interfaces, tengo ganas de probar cosas y de mejorar en cada proyecto.
         Me gustan los dinosaurios.
       </p>
+
+      <pre class="dino" role="img" aria-label="Dinosaurio de texto">
+               __       
+              / _)
+     _.----._/ /
+    /         /
+ __/ (  | (  |
+/__.-'|_|--|_|
+</pre>
+
       <div class="tecnologias" aria-label="Tecnologías del proyecto">
         <span>HTML</span><span>CSS</span><span>TypeScript</span>
       </div>
@@ -33,7 +44,6 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 
     <footer class="pie">
       <span>Aprendiendo</span>
-      
     </footer>
   </main>
 `

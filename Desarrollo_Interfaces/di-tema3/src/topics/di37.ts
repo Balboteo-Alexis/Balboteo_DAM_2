@@ -38,3 +38,5 @@ const [, { nombre,
 console.log(nombre, apellidos);
 console.log(primerModulo);
 console.log(curso, notaMedia);
+
+export{};
