@@ -1,0 +1,23 @@
+from titanes import ejercicio1,ejercicio2, ejercicio3,ejercicio4,ejercicio5,ejercicio6,ejercicio7,ejercicio8,ejercicio9,ejercicio10
+
+if __name__ == '__main__':
+    print("1")
+    ejercicio1()
+    print("2")
+    ejercicio2()
+    print("3")
+    ejercicio3()
+    print("4")
+    ejercicio4()
+    print("5")
+    ejercicio5()
+    print("6")
+    ejercicio6()
+    print("7")
+    ejercicio7()
+    print("8")
+    ejercicio8()
+    print("9")
+    ejercicio9()
+    print("10")
+    ejercicio10()
