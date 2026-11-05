@@ -3,6 +3,16 @@
 
 Repositorio dedicado a almacenar y organizar los apuntes, ejercicios, prácticas y proyectos realizados durante el segundo curso del Ciclo Formativo de Grado Superior en **Desarrollo de Aplicaciones Multiplataforma (DAM)** en el IES Playamar.
 
+## 📁 Organización del repositorio
+
+Cada asignatura dispone de su propia carpeta y de un archivo
+`README.md` donde se documentan las prácticas y ejercicios
+realizados.
+
+Los ejercicios se organizan por relaciones, unidades o
+actividades para facilitar su consulta y seguimiento.
+
+
 ## 📂 Asignaturas
 
 ### 📱 Programación Multimedia y Dispositivos Móviles
