@@ -31,26 +31,29 @@ Primera relación de ejercicios dedicada al aprendizaje de los fundamentos de Da
 
 ### 📋 Contenido de la relación
 
+### 📋 Contenido de la relación
+
 1. **Hola mundo y variables** — [💻 Solución](Relaci%C3%B3n%201/1_hola-mundo.dart)
-2. **Tipos de datos** — [💻 Solución](Relaci%C3%B3n%201/)
-3. **Constantes** — [💻 Solución](Relaci%C3%B3n%201/)
-4. **Variables nullable** — [💻 Solución](Relaci%C3%B3n%201/)
-5. **Clasificación de triángulos** — [💻 Solución](Relaci%C3%B3n%201/)
-6. **Calculadora básica** — [💻 Solución](Relaci%C3%B3n%201/)
-7. **Ecuación de segundo grado** — [💻 Solución](Relaci%C3%B3n%201/)
-8. **Tabla de multiplicar** — [💻 Solución](Relaci%C3%B3n%201/)
-9. **Tablas del 1 al 10** — [💻 Solución](Relaci%C3%B3n%201/)
-10. **Suma de números naturales** — [💻 Solución](Relaci%C3%B3n%201/)
-11. **Factorial de un número** — [💻 Solución](Relaci%C3%B3n%201/)
-12. **Máximo común divisor** — [💻 Solución](Relaci%C3%B3n%201/)
-13. **División entera** — [💻 Solución](Relaci%C3%B3n%201/)
-14. **Lanzamiento de un dado** — [💻 Solución](Relaci%C3%B3n%201/)
-15. **Simulación de lanzamientos** — [💻 Solución](Relaci%C3%B3n%201/)
-16. **Listas y mapas** — [💻 Solución](Relaci%C3%B3n%201/)
-17. **Enumeraciones** — [💻 Solución](Relaci%C3%B3n%201/)
-18. **Gestión de errores** — [💻 Solución](Relaci%C3%B3n%201/)
-19. **Recorrido de mapas** — [💻 Solución](Relaci%C3%B3n%201/)
-20. **Estadísticas de temperaturas** — [💻 Solución](Relaci%C3%B3n%201/)
+2. **Tipos de datos** — [💻 Solución](Relaci%C3%B3n%201/2_tipos-dart.dart)
+3. **Constantes** — [💻 Solución](Relaci%C3%B3n%201/3_constantes-dart.dart)
+4. **Variables nullable** — [💻 Solución](Relaci%C3%B3n%201/4_nullable.dart)
+5. **Clasificación de triángulos** — [💻 Solución](Relaci%C3%B3n%201/5_triangulo.dart)
+6. **Calculadora básica** — [💻 Solución](Relaci%C3%B3n%201/6_operaciones.dart)
+7. **Ecuación de segundo grado** — [💻 Solución](Relaci%C3%B3n%201/7_ecuacion2ºgrado.dart)
+8. **Tabla de multiplicar** — [💻 Solución](Relaci%C3%B3n%201/8_tablaMultiplicar.dart)
+9. **Tablas del 1 al 10** — Pendiente
+10. **Suma de números naturales** — [💻 Solución](Relaci%C3%B3n%201/10_suma.dart)
+11. **Factorial de un número** — [💻 Solución](Relaci%C3%B3n%201/11_factorial.dart)
+12. **Máximo común divisor** — Pendiente
+13. **División entera** — Pendiente
+14. **Lanzamiento de un dado** — Pendiente
+15. **Simulación de lanzamientos** — Pendiente
+16. **Listas y mapas** — Pendiente
+17. **Enumeraciones** — Pendiente
+18. **Gestión de errores** — Pendiente
+19. **Recorrido de mapas** — Pendiente
+20. **Estadísticas de temperaturas** — Pendiente
+
 
 ---
 
