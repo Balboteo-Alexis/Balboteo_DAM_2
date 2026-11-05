@@ -5,15 +5,6 @@ Repositorio dedicado a almacenar y organizar los apuntes, ejercicios, prácticas
 
 ## 📂 Asignaturas
 
-### 🗄️ Acceso a Datos
-Ejercicios y prácticas relacionados con el acceso, almacenamiento y gestión de datos desde aplicaciones.
-
-### 🎨 Desarrollo de Interfaces
-Prácticas sobre el diseño y desarrollo de interfaces gráficas de usuario.
-
-### ⚙️ Programación de Servicios y Procesos (PsP)
-Ejercicios relacionados con la programación concurrente, procesos, hilos y comunicación entre aplicaciones.
-
 ### 📱 Programación Multimedia y Dispositivos Móviles
 Ejercicios y prácticas de programación orientada al desarrollo de aplicaciones móviles.
 
@@ -26,6 +17,10 @@ Primera relación de ejercicios de introducción a Dart, centrada en conocer la 
 **Documento de la actividad:**
 
 📄 [Ver PDF - Ejercicios iniciales de Dart](Programaci%C3%B3n%20Multimedia/Dart-ejercicios-iniciales.pdf)
+
+**Ejercicios resueltos:**
+
+💻 [Ver carpeta de ejercicios de Dart](Programaci%C3%B3n%20Multimedia/Ejercicios%20Dart/)
 
 **Contenido de la relación:**
 
@@ -50,54 +45,31 @@ Primera relación de ejercicios de introducción a Dart, centrada en conocer la 
 19. Recorrido de claves y valores de un `Map`.
 20. Estadísticas de temperaturas mediante un `Map`.
 
-#### ▶️ Ejecución de los ejercicios
 
-Para ejecutar los archivos Dart desde Visual Studio Code:
-
-1. Instalar el SDK de Dart.
-2. Instalar la extensión **Code Runner**.
-3. Activar la opción `Code Runner: Run In Terminal`.
-4. Configurar el archivo `settings.json`:
-
-```json
-{
-  "code-runner.runInTerminal": true,
-  "code-runner.executorMap": {
-    "dart": "dart run"
-  }
-}
-```
-
-Con esta configuración podemos ejecutar los archivos `.dart` mediante el botón **Run Code (▶)** y visualizar los resultados en la terminal.
-
-**Documentación oficial:** https://dart.dev/
 
 ### 🐍 Python
 Ejercicios y prácticas de programación en Python, trabajando estructuras de datos, funciones y resolución de problemas.
+
+### 🗄️ Acceso a Datos
+Ejercicios y prácticas relacionados con el acceso, almacenamiento y gestión de datos desde aplicaciones.
+
+### 🎨 Desarrollo de Interfaces
+Prácticas sobre el diseño y desarrollo de interfaces gráficas de usuario.
+
+### ⚙️ Programación de Servicios y Procesos (PsP)
+Ejercicios relacionados con la programación concurrente, procesos, hilos y comunicación entre aplicaciones.
+
 
 ### 🏢 Sistemas de Gestión Empresarial (SGE)
 Prácticas relacionadas con sistemas ERP, CRM y herramientas de gestión empresarial.
 
 ---
 
-## 🛠️ Herramientas y tecnologías
-
-- Java
-- Python
-- Dart
-- Visual Studio Code
-- Eclipse
-- Git y GitHub
-
----
 
 ## 👨‍💻 Autor
 
 **Alexis Balboteo González**
-
 Estudiante de 2º de Desarrollo de Aplicaciones Multiplataforma.
-
-📍 IES Playamar - Málaga
 
 ---
 
