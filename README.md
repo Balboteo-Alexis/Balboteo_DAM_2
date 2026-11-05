@@ -3,64 +3,52 @@
 
 Repositorio dedicado a almacenar y organizar los apuntes, ejercicios, prácticas y proyectos realizados durante el segundo curso del Ciclo Formativo de Grado Superior en **Desarrollo de Aplicaciones Multiplataforma (DAM)** en el IES Playamar.
 
-## 📁 Organización del repositorio
+## Organización del repositorio
 
-Cada asignatura dispone de su propia carpeta y de un archivo
-`README.md` donde se documentan las prácticas y ejercicios
-realizados.
+Cada asignatura dispone de su propia carpeta y de un archivo `README.md` donde se documentan las prácticas y ejercicios realizados.
 
-Los ejercicios se organizan por relaciones, unidades o
-actividades para facilitar su consulta y seguimiento.
+Los ejercicios se organizan por relaciones, unidades o actividades para facilitar su consulta y seguimiento.
 
+## Asignaturas
 
-## 📂 Asignaturas
+### 📱 [Programación Multimedia y Dispositivos Móviles](Programaci%C3%B3n%20Multimedia/)
 
-### 📱 Programación Multimedia y Dispositivos Móviles
 Ejercicios y prácticas de programación orientada al desarrollo de aplicaciones móviles.
 
-📂 [Ver carpeta de Programación Multimedia](Programaci%C3%B3n%20Multimedia/)
+### 🐍 [Python](Python/)
 
-#
-
-### 🐍 Python
 Ejercicios y prácticas de programación en Python, trabajando estructuras de datos, funciones y resolución de problemas.
 
-📂 [Ver carpeta de Python](Python/)
+### 🗄️ [Acceso a Datos](Acceso%20a%20Datos/)
 
-#
-
-### 🗄️ Acceso a Datos
 Ejercicios y prácticas relacionados con el acceso, almacenamiento y gestión de datos desde aplicaciones.
 
-📂 [Ver carpeta de Acceso a Datos](Acceso%20a%20Datos/)
+### 🎨 [Desarrollo de Interfaces](Desarrollo%20de%20Interfaces/)
 
-#
-
-### 🎨 Desarrollo de Interfaces
 Prácticas sobre el diseño y desarrollo de interfaces gráficas de usuario.
 
-📂 [Ver carpeta de Desarrollo de Interfaces](Desarrollo%20de%20Interfaces/)
+### ⚙️ [Programación de Servicios y Procesos (PsP)](Programacion%20Servicios%20PsP/)
 
-#
-
-### ⚙️ Programación de Servicios y Procesos (PsP)
 Ejercicios relacionados con la programación concurrente, procesos, hilos y comunicación entre aplicaciones.
 
-📂 [Ver carpeta de Programación de Servicios y Procesos](Programacion%20Servicios%20PsP/)
+### 🏢 [Sistemas de Gestión Empresarial (SGE)](SGE/)
 
-#
-
-### 🏢 Sistemas de Gestión Empresarial (SGE)
 Prácticas relacionadas con sistemas ERP, CRM y herramientas de gestión empresarial.
 
-📂 [Ver carpeta de SGE](SGE/)
+## 🛠️ Tecnologías y herramientas
 
-#
+Durante el curso se trabajan diferentes lenguajes, herramientas y tecnologías:
 
+- **Lenguajes:** Java, Python, Dart y SQL.
+- **Entornos de desarrollo:** Visual Studio Code y Eclipse.
+- **Bases de datos:** Sistemas relacionales y no relacionales.
+- **Control de versiones:** Git y GitHub.
+- **Sistemas empresariales:** ERP y CRM.
 
 ## 👨‍💻 Autor
 
 **Alexis Balboteo González**
+
 Estudiante de 2º de Desarrollo de Aplicaciones Multiplataforma.
 
 ---
