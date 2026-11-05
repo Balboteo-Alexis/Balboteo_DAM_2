@@ -24,7 +24,7 @@ public class Consumidor implements Runnable {
                         + " retira una pizza " + pizza);
                 
                 try {
-    				int pausa = (int) (Math.random()*3000);
+    				int pausa = (int) (Math.random()*5000);
     			    Thread.sleep(pausa);
 
     			} catch (InterruptedException e) {

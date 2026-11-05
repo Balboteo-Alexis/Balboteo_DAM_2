@@ -30,7 +30,7 @@ public class Productor implements Runnable {
 		for (int i = 0; i < 20; i++) {
 
 			try {
-				int pausa = (int) (Math.random()*3000);
+				int pausa = (int) (Math.random()*1000);
 			    Thread.sleep(pausa);
 
 			} catch (InterruptedException e) {
