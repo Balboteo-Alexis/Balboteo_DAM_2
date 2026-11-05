@@ -20,7 +20,7 @@ Primera relación de ejercicios de introducción a Dart, centrada en conocer la 
 
 **Ejercicios resueltos:**
 
-💻 [Ver carpeta de ejercicios de Dart](Programaci%C3%B3n%20Multimedia/Ejercicios%20Dart/)
+💻 [Ver carpeta de ejercicios de Dart]([Programaci%C3%B3n%20Multimedia/Ejercicios%20Dart/](https://github.com/Balboteo-Alexis/Balboteo_DAM_2/tree/main/Programación%20Multimedia/Relación%201))
 
 **Contenido de la relación:**
 
