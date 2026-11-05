@@ -1,40 +1,61 @@
-### 📱 Programación Multimedia y Dispositivos Móviles
-Ejercicios y prácticas de programación orientada al desarrollo de aplicaciones móviles.
 
-**Lenguaje utilizado:** Dart.
+<div align="center">
 
-#### 📘 Relación de ejercicios de Dart (I)
+# 📱 Programación Multimedia y Dispositivos Móviles
 
-Primera relación de ejercicios de introducción a Dart, centrada en conocer la sintaxis y los fundamentos del lenguaje.
+### 2º DAM · IES Playamar
 
-**Documento de la actividad:**
+Ejercicios, prácticas y proyectos orientados al desarrollo de aplicaciones móviles.
 
-📄 [Ver PDF - Ejercicios iniciales de Dart](Programaci%C3%B3n%20Multimedia/Dart-ejercicios-iniciales.pdf)
+**Lenguaje:** Dart · **Entorno:** Visual Studio Code
+
+[Documentación oficial de Dart](https://dart.dev/)
+
+</div>
+
+---
+
+## 📚 Relaciones de ejercicios
+
+### 📘 Relación 1 — Introducción a Dart
+
+Primera relación de ejercicios dedicada al aprendizaje de los fundamentos de Dart: sintaxis, tipos de datos, operadores, estructuras de control, colecciones y gestión de errores.
+
+**Material de la actividad:**
+
+📄 [Ver enunciado de los ejercicios (PDF)](Dart-ejercicios-iniciales.pdf)
 
 **Ejercicios resueltos:**
 
-💻 [Ver ejercicios de Dart - Relación 1](https://github.com/Balboteo-Alexis/Balboteo_DAM_2/tree/main/Programaci%C3%B3n%20Multimedia/Relaci%C3%B3n%201)
+💻 [Ver carpeta de ejercicios — Relación 1](Relaci%C3%B3n%201/)
 
-**Contenido de la relación:**
+### 📋 Contenido de la relación
 
-1. Introducción a Dart: variables, `print()` y comentarios.
-2. Tipos de datos: `int`, `double`, `String`, `bool`, `dynamic`, `List`, `Map`, `Set` y records.
-3. Constantes: `const` y `final`.
-4. Variables nullable y null safety.
-5. Clasificación de triángulos.
-6. Calculadora básica con operadores.
-7. Ecuaciones de segundo grado.
-8. Tabla de multiplicar con entrada por consola.
-9. Tablas de multiplicar del 1 al 10.
-10. Suma de los primeros números naturales.
-11. Cálculo del factorial.
-12. Máximo común divisor mediante Euclides.
-13. División entera mediante Euclides.
-14. Simulación del lanzamiento de un dado.
-15. Simulación de múltiples lanzamientos y frecuencias.
-16. Recorrido de listas y mapas con `forEach`.
-17. Enumeraciones (`enum`).
-18. Gestión de excepciones con `try-catch-finally`.
-19. Recorrido de claves y valores de un `Map`.
-20. Estadísticas de temperaturas mediante un `Map`.
+1. **Hola mundo y variables** — [💻 Solución](Relaci%C3%B3n%201/1_hola-mundo.dart)
+2. **Tipos de datos** — [💻 Solución](Relaci%C3%B3n%201/)
+3. **Constantes** — [💻 Solución](Relaci%C3%B3n%201/)
+4. **Variables nullable** — [💻 Solución](Relaci%C3%B3n%201/)
+5. **Clasificación de triángulos** — [💻 Solución](Relaci%C3%B3n%201/)
+6. **Calculadora básica** — [💻 Solución](Relaci%C3%B3n%201/)
+7. **Ecuación de segundo grado** — [💻 Solución](Relaci%C3%B3n%201/)
+8. **Tabla de multiplicar** — [💻 Solución](Relaci%C3%B3n%201/)
+9. **Tablas del 1 al 10** — [💻 Solución](Relaci%C3%B3n%201/)
+10. **Suma de números naturales** — [💻 Solución](Relaci%C3%B3n%201/)
+11. **Factorial de un número** — [💻 Solución](Relaci%C3%B3n%201/)
+12. **Máximo común divisor** — [💻 Solución](Relaci%C3%B3n%201/)
+13. **División entera** — [💻 Solución](Relaci%C3%B3n%201/)
+14. **Lanzamiento de un dado** — [💻 Solución](Relaci%C3%B3n%201/)
+15. **Simulación de lanzamientos** — [💻 Solución](Relaci%C3%B3n%201/)
+16. **Listas y mapas** — [💻 Solución](Relaci%C3%B3n%201/)
+17. **Enumeraciones** — [💻 Solución](Relaci%C3%B3n%201/)
+18. **Gestión de errores** — [💻 Solución](Relaci%C3%B3n%201/)
+19. **Recorrido de mapas** — [💻 Solución](Relaci%C3%B3n%201/)
+20. **Estadísticas de temperaturas** — [💻 Solución](Relaci%C3%B3n%201/)
 
+---
+
+<div align="center">
+
+[⬅️ Volver al repositorio principal](../)
+
+</div>
