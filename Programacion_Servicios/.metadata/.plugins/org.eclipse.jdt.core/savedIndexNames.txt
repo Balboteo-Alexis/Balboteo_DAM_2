@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Users\Usuario\Documents\Balboteo_DAM_2\Programacion_Servicios\.metadata\.plugins\org.eclipse.jdt.core
-856945834.index
-524495999.index
-1865797976.index
