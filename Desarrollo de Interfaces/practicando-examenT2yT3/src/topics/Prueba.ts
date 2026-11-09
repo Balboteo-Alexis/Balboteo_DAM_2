@@ -118,10 +118,10 @@ export function resumirTaller(taller: Taller): string {
 
     // Conservamos taller para llamar al método que utiliza this.
     return `Título: ${titulo}
-Profesor: ${nombre} ${apellidos}
-Localidad del profesor: ${localidad}
-Inscritos: ${listadoAlumnos.length}
-Plazas libres: ${taller.plazasLibres()}`;
+    Profesor: ${nombre} ${apellidos}
+    Localidad del profesor: ${localidad}
+    Inscritos: ${listadoAlumnos.length}
+    Plazas libres: ${taller.plazasLibres()}`;
 }
 
 // Función reutilizable para arrays de distintos tipos.
