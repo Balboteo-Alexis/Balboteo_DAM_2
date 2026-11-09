@@ -16,7 +16,7 @@ res = [
     or "Fantasía" in serie["generos"] )
     and "Terror" not in serie["generos"] 
     and len(serie["reseñas"]) >= 2
-
+    
 
 ]
 
