@@ -1,0 +1,17 @@
+<h1>Hola {{title}}</h1>
+<hr>
+<h3>
+Contador: {{contador}}
+</h3>
+
+<p>El numero elegido para incrementar y decrementar es el: {{incremento}}</p>
+
+
+
+<button (click)="incrementarPor(incremento)"> Incrementar {{incremento}}</button>
+<button (click)="descontarPor(incremento)"> Descontar {{incremento}}</button>
+<button (click) = "reset()">RESET </button>
+
+<hr>
+
+<app-contador></app-contador>
