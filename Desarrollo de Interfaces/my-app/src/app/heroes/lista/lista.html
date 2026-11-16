@@ -1,5 +1,14 @@
 <h3>Lista de héroes</h3>
 
+
+<button class="btn btn-warning" (click) = eliminaUltimoHeroe()>Elimina al último</button>
+<h3  *ngif = "heroeEliminado" >Heroe eliminado</h3>
+
+
+
+<ng-template>Ningún héroe eliminado</ng-template>
+
+
 <ul class="mt-2 list-group">
 
   <!-- <li class ="list-group-item">Goku</li>
@@ -16,3 +25,4 @@
   }
 
 </ul>
+
