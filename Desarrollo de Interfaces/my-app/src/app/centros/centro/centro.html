@@ -1,0 +1,38 @@
+
+<div class="container mt-4">
+
+  <div class="card shadow p-4">
+
+    <h2 class="text-primary">Centro Educativo</h2>
+    <p>{{ nombreCentro }}</p>
+
+    <h4>Localidad:</h4>
+    <p>{{ localidad }}</p>
+
+    <h4>Familias Profesionales:</h4>
+
+    <ul class="list-group mb-3">
+      @for (familia of familiasProfesionales; track familia) {
+        <li class="list-group-item">
+          {{ familia }}
+        </li>
+      }
+    </ul>
+
+    <h4>CENTRO:</h4>
+    <p class="fw-bold">{{ nombreCapitalizado }}</p>
+
+    <h4>Logo:</h4>
+    <img [src]="getLogo()"
+         alt="Logo del centro"
+         width="150"
+         class="mb-3">
+
+    <button class="btn btn-primary"
+            (click)="cambiarCentro()">
+      Cambiar centro
+    </button>
+
+  </div>
+
+</div>

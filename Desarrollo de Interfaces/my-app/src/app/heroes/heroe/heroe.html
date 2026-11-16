@@ -1,1 +1,40 @@
-<p>heroe works!</p>
+<h1>Goku</h1>
+<dl>
+  <td>Nombre:</td>
+  <dd>{{nombre}}</dd>
+
+  <td>Edad:</td>
+  <dd>{{edad}}</dd>
+
+  <td>Nombre capitalizado:</td>
+  <dd>{{nombreCapitalizado}}</dd>
+
+  <td>Métodos:</td>
+  <dd>{{getDescriptionHeroe()}}</dd>
+
+
+</dl>
+
+
+
+<button class="btn btn-warning" (click)="reset()">
+  Reset
+</button>
+
+
+@if (nombre === "Goku"){
+
+<button class="btn btn-warning" (click)="cambiarNombre()">
+  Cambiar nombre
+</button>
+
+}
+
+
+@if (edad === 28){
+
+<button class="btn btn-primary" (click)="cambiarEdad()">
+  Cambiar edad
+</button>
+
+}

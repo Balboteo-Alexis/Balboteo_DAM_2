@@ -1,9 +1,12 @@
 import { Component, signal } from '@angular/core';
 
 import { ContadorComponents } from './contador/contador';
+import { Heroe } from './heroes/heroe/heroe';
+import { Lista } from './heroes/lista/lista';
+import { Centro } from './centros/centro/centro';
 
 @Component({
-  imports: [ ContadorComponents],
+  imports: [ContadorComponents, Heroe, Lista, Centro],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
