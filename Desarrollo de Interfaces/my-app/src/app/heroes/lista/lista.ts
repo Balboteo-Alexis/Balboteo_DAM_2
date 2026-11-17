@@ -1,3 +1,4 @@
+
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -9,17 +10,12 @@ import { CommonModule } from '@angular/common';
 })
 export class Lista {
 
-public listaHeroes : string[] = ["Bulma", "loco", "bueno", "malo", "Kumilo"]
-public heroeEliminado: string = "Sin eliminar";
+  public listaHeroes: string[] = ["Bulma", "loco", "bueno", "malo", "Kumilo"];
 
-public eliminaUltimoHeroe(): void{
+  public heroeEliminado?: string;
 
-  this.heroeEliminado = this.listaHeroes.pop || "Sin eliminar";
-
-}
-
-
-
-
+  public eliminarUltimoHeroe(): void {
+    this.heroeEliminado = this.listaHeroes.pop();
+  }
 
 }
