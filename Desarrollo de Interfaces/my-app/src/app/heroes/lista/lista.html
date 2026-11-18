@@ -1,28 +1,18 @@
+
 <h3>Lista de héroes</h3>
 
+<button class="btn btn-warning" (click)="eliminarUltimoHeroe()">
+  Elimina al último
+</button>
 
-<button class="btn btn-warning" (click) = eliminaUltimoHeroe()>Elimina al último</button>
-<h3  *ngif = "heroeEliminado" >Heroe eliminado</h3>
-
-
-
-<ng-template>Ningún héroe eliminado</ng-template>
-
+@if (heroeEliminado) {
+  <h3>Héroe eliminado: {{ heroeEliminado }}</h3>
+} @else {
+  <h3>Ningún héroe eliminado</h3>
+}
 
 <ul class="mt-2 list-group">
-
-  <!-- <li class ="list-group-item">Goku</li>
-  <li class ="list-group-item">Gojan</li>
-  <li class ="list-group-item">Veggeta</li>
-  <li class ="list-group-item">Pikolo</li> -->
-
-  <!-- <li *ngFor="let nombre of listaHeroes" class = "list-group-item">{{nombre}}</li> -->
-
-
-  @for (nombre of listaHeroes; track nombre){
-    <li class = "list-group-item">{{nombre}}</li>
-
+  @for (nombre of listaHeroes; track nombre) {
+    <li class="list-group-item">{{ nombre }}</li>
   }
-
 </ul>
-
