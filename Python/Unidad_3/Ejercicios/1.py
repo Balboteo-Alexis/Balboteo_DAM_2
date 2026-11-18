@@ -2,21 +2,25 @@
 
 def comprobarLetraDNI (dni: str):
     
-    correcto = False
+    correcto = True
     letra = dni[-1]
-    numeros = dni[0:7]
+    numeros = dni[0:8]
     
-    if(numeros.isdigit and len(numeros) == 8) :
+    
+    print(letra)
+    print(numeros)
+    
+    if(numeros.isdigit() and len(numeros) == 8) :
         
-        resto = numeros % 23
+        resto =  int(numeros) % 23
         
         list = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
         
-        if letra == list[resto] : 
+        if letra != list[resto] : 
            
-           correcto =  True 
+           correcto =  False 
         
     return correcto
 
-print(comprobarLetraDNI("79292306J"))
+print(comprobarLetraDNI("12345678Z"))
     
