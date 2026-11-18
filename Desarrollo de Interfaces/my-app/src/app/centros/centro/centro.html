@@ -1,38 +1,63 @@
+<div class="container">
 
-<div class="container mt-4">
+  @if (centroActual; as centro) {
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">{{ centro.nombreCentro }}</h2>
 
-  <div class="card shadow p-4">
+        <p><strong>Localidad:</strong> {{ centro.localidad }}</p>
 
-    <h2 class="text-primary">Centro Educativo</h2>
-    <p>{{ nombreCentro }}</p>
+        <h3>Ciclos formativos</h3>
+        <ul class="list-group">
+          @for (familia of centro.familiasProfesionales; track familia) {
+            <li class="list-group-item">{{ familia }}</li>
+          }
+        </ul>
 
-    <h4>Localidad:</h4>
-    <p>{{ localidad }}</p>
+        <img [src]="centro.logo" width="150" alt="Logo del centro">
+      </div>
+    </div>
+  } @else {
+    <p>No hay centros en el listado.</p>
+  }
 
-    <h4>Familias Profesionales:</h4>
-
-    <ul class="list-group mb-3">
-      @for (familia of familiasProfesionales; track familia) {
-        <li class="list-group-item">
-          {{ familia }}
-        </li>
+  <div class="text-center mb-2">
+    <div class="btn-group">
+      @if (centros.length > 0) {
+        <button class="btn btn-danger" (click)="eliminar()">ELIMINAR</button>
       }
-    </ul>
+      @if (pila.length > 0) {
+        <button class="btn btn-success" (click)="insertar()">INSERTAR</button>
+      }
+    </div>
+  </div>
 
-    <h4>CENTRO:</h4>
-    <p class="fw-bold">{{ nombreCapitalizado }}</p>
+  <div class="text-center mb-2">
+    <div class="btn-group">
+      @if (posicion > 0) {
+        <button class="btn btn-primary" (click)="anterior()">&lt; ANTERIOR</button>
+      }
+      @if (posicion < centros.length - 1) {
+        <button class="btn btn-primary" (click)="posterior()">&gt; POSTERIOR</button>
+      }
+    </div>
+  </div>
 
-    <h4>Logo:</h4>
-    <img [src]="getLogo()"
-         alt="Logo del centro"
-         width="150"
-         class="mb-3">
+  <p class="text-center">POSICIÓN {{ centros.length === 0 ? 0 : posicion + 1 }} / {{ centros.length }}</p>
 
-    <button class="btn btn-primary"
-            (click)="cambiarCentro()">
-      Cambiar centro
-    </button>
-
+  <div class="card">
+    <div class="card-body">
+      <h3 class="card-title">Pila de centros eliminados</h3>
+      @if (pila.length > 0) {
+        <ul class="list-group">
+          @for (centroPila of pila; track $index) {
+            <li class="list-group-item">{{ centroPila.nombreCentro }}</li>
+          }
+        </ul>
+      } @else {
+        <p>Pila vacía</p>
+      }
+    </div>
   </div>
 
 </div>
