@@ -3,26 +3,46 @@
 // Autor: Alexis Balboteo González
 
 void main() {
+  List<double> temperaturas = [22.5, 25.0, 19.8, 27.3, 24.1, 21.6, 26.4];
 
-  List<double> temperaturas = [25, 28, 22, 30, 27, 24, 26];
-
-  print("Máxima: ${temperaturaMaxima(temperaturas)}");
-  print("Mínima: ${temperaturaMinima(temperaturas)}");
-  print("Media: ${temperaturaMedia(temperaturas)}");
-
+  print("Temperatura máxima: ${temperaturaMaxima(temperaturas)} °C");
+  print("Temperatura mínima: ${temperaturaMinima(temperaturas)} °C");
+  print("Temperatura media: ${temperaturaMedia(temperaturas).toStringAsFixed(2)} °C");
 }
 
-// Función que devuelve la temperatura máxima
+// Devuelve la temperatura máxima de la lista.
 double temperaturaMaxima(List<double> temperaturas) {
+  double maxima = temperaturas[0];
 
+  for (double temperatura in temperaturas) {
+    if (temperatura > maxima) {
+      maxima = temperatura;
+    }
+  }
+
+  return maxima;
 }
 
-// Función que devuelve la temperatura mínima
+// Devuelve la temperatura mínima de la lista.
 double temperaturaMinima(List<double> temperaturas) {
+  double minima = temperaturas[0];
 
+  for (double temperatura in temperaturas) {
+    if (temperatura < minima) {
+      minima = temperatura;
+    }
+  }
+
+  return minima;
 }
 
-// Función que calcula y devuelve la temperatura media
+// Devuelve la media de las temperaturas de la lista.
 double temperaturaMedia(List<double> temperaturas) {
+  double suma = 0;
 
+  for (double temperatura in temperaturas) {
+    suma += temperatura;
+  }
+
+  return suma / temperaturas.length;
 }
