@@ -3,14 +3,20 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  imports: [CommonModule],
   selector: 'app-lista',
+  standalone: false,
   styleUrl: './lista.css',
   templateUrl: './lista.html',
 })
 export class Lista {
 
-  public listaHeroes: string[] = ["Bulma", "loco", "bueno", "malo", "Kumilo"];
+  public listaHeroes: string[] = [
+    "Goku",
+    "Vegeta",
+    "Gohan",
+    "Piccolo",
+    "Trunks"
+  ];
 
   public heroeEliminado?: string;
 

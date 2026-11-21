@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 @Component({
-  imports: [CommonModule],
   selector: 'app-heroe',
+  standalone: false,
   styleUrl: './heroe.css',
   templateUrl: './heroe.html',
 })
