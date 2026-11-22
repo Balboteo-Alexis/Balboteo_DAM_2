@@ -1,59 +1,130 @@
-# MyApp
+# 🅰️ MyApp — Proyecto Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.2.7.
+### Desarrollo de Interfaces · 2º DAM · IES Playamar
 
-## Development server
+Proyecto desarrollado durante las clases de **Desarrollo de Interfaces**, utilizando Angular y TypeScript.
 
-To start a local development server, run:
+El objetivo es aprender el funcionamiento de Angular mediante la creación de componentes, la gestión de datos y la interacción con el usuario.
+
+---
+
+## 📂 Componentes del proyecto
+
+### 🔢 Contador
+Componente que permite incrementar, decrementar y reiniciar un contador mediante botones.
+
+### 🦸 Héroe
+Componente que muestra la información de un personaje y permite modificar sus propiedades.
+
+**Funcionalidades:**
+- Mostrar el nombre y la edad.
+- Convertir el nombre a mayúsculas.
+- Cambiar el nombre y la edad mediante botones.
+- Restaurar los valores originales.
+
+### 📋 Lista de héroes
+Componente para trabajar con arrays y gestionar una lista de personajes.
+
+**Funcionalidades:**
+- Mostrar los elementos de la lista.
+- Añadir nuevos personajes.
+- Eliminar elementos.
+- Trabajar con eventos y estructuras de control de Angular.
+
+### 🏫 Centros educativos
+Componente desarrollado para la actividad **T 4.2 — IES Playamar / IES Jacaranda**.
+
+Permite visualizar la información de un centro educativo e intercambiar sus datos mediante un botón.
+
+**Información mostrada:**
+- Nombre del centro.
+- Localidad.
+- Familias profesionales.
+- Logotipo correspondiente.
+
+Se utiliza **Bootstrap** para mejorar la presentación de la interfaz.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+| Tecnología | Uso |
+|---|---|
+| Angular 22 | Framework principal del proyecto. |
+| TypeScript | Programación de componentes y métodos. |
+| HTML | Estructura de las plantillas. |
+| CSS | Estilos visuales. |
+| Bootstrap 5 | Diseño y presentación de componentes. |
+| Node.js y npm | Gestión del entorno y las dependencias. |
+
+---
+
+## 🚀 Instalación y ejecución
+
+### 1. Requisitos
+
+Tener instalados Node.js y npm en versiones compatibles con Angular 22.
+
+### 2. Instalar dependencias
+
+Desde la carpeta del proyecto:
 
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### 3. Iniciar el servidor
 
 ```bash
-ng generate component component-name
+npx ng serve
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Abrir en el navegador:
 
-```bash
-ng generate --help
-```
+**http://localhost:4200/**
 
-## Building
+Los cambios realizados en el código se actualizarán automáticamente en el navegador.
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+## ⚙️ Comandos útiles
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+| Comando | Descripción |
+|---|---|
+| `npx ng serve` | Inicia el servidor de desarrollo. |
+| `npx ng generate component nombre` | Genera un nuevo componente. |
+| `npx ng build` | Compila el proyecto en la carpeta `dist/`. |
+| `npx ng test` | Ejecuta las pruebas unitarias. |
 
-## Running unit tests
+---
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+## 📚 Conceptos trabajados
 
-```bash
-ng test
-```
+A través de los diferentes componentes hemos practicado:
 
-## Running end-to-end tests
+- Creación y organización de componentes Angular.
+- Declaración de propiedades y métodos en TypeScript.
+- Interpolación de datos con `{{ }}`.
+- Gestión de eventos mediante `(click)`.
+- Uso de `@if` y `@for` en las plantillas.
+- Trabajo con arrays e interfaces.
+- Aplicación de estilos con Bootstrap.
+- Organización y reutilización de código.
 
-For end-to-end (e2e) testing, run:
+---
 
-```bash
-ng e2e
-```
+## 🔗 Repositorio
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Este proyecto forma parte del repositorio general de segundo de DAM:
 
-## Additional Resources
+[📂 Balboteo_DAM_2](https://github.com/Balboteo-Alexis/Balboteo_DAM_2)
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+
+## 👨‍💻 Autor
+
+**Alexis Balboteo González**
+
+2º Desarrollo de Aplicaciones Multiplataforma  
+IES Playamar · Curso 2026/2027
+
