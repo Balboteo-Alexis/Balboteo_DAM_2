@@ -4,7 +4,7 @@ import { Centro } from './centros/centro/centro';
 import { HeroesModule } from './heroes/heroes.module';
 
 @Component({
-  imports: [Centro, HeroesModule],
+  imports: [ HeroesModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
