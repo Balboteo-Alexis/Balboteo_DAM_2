@@ -27,3 +27,6 @@ export class App {
     this.contador -= num;
   }
 }
+
+
+
