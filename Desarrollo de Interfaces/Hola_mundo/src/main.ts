@@ -7,6 +7,9 @@ import viteLogo from './assets/vite.svg'
 // import "./topics/10-decoradores.ts"
 import "./topics/11-encadenamiento-opcional.ts"
 
+
+
+
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <section id="center">
   <div class="hero">
