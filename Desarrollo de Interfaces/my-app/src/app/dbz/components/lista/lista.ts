@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { Personaje } from '../../interfaces/personaje';
 
 @Component({
-  selector: 'dbz-Lista',
+  selector: 'dbz-lista',
   standalone: false,
   styleUrl: './lista.css',
   templateUrl: './lista.html',
@@ -16,11 +16,6 @@ export class dbzLista {
     { nombre: "Ninguno", fuerza: 0 }
 
   ];
-
-
-  public annadirPersonaje(pepito: Personaje): void {
-    this.listaPersonajes.push(pepito);
-  }
 
 }
 

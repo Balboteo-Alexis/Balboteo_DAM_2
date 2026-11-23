@@ -1,26 +1,28 @@
-<h1 class="text-center">DBZ MAIN PAGE</h1>
+<h1 class="text-center">DBZ Personajes</h1>
+<hr>
 
 <div class="container">
 
   <div class="row">
     <div class="col">
-      <h4>Añadir personaje</h4>
-      <form class="row">
-        <dbz-Lista [miLista]="personajes"></dbz-Lista>
-      </form>
+      <dbz-lista [miLista]="personajes"></dbz-lista>
     </div>
-  </div>
+
+    <hr>
 
 
-  <div class="row">
     <div class="col">
-      <h4>Añadir personaje</h4>
-      <form class="row">
-        <input type="text" class="form-control mb-2" placeholder="Nombre">
-        <input type="text" class="form-control mb-2" placeholder="Fuerza">
-        <button type="submit" class="btn btn-primary">Añadir</button>
-      </form>
+      <addPersonaje (nuevoPersonaje)="annadirPersonaje($event)">
+      </addPersonaje>
     </div>
+
+
+
+
+
+
+
+
   </div>
 
 </div>
