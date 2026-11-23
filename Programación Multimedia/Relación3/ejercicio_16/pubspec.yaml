@@ -1,0 +1,15 @@
+name: proyecto_fechas
+description: A simple command-line application.
+version: 1.0.0
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ^3.13.7
+
+# Add regular dependencies here.
+dependencies:
+  intl: ^0.20.3
+  # path: ^1.9.0
+
+dev_dependencies:
+  lints: ^6.0.0
