@@ -2,9 +2,13 @@
 import { Component } from '@angular/core';
 import { Centro } from './centros/centro/centro';
 import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
+import { MainPage } from './dbz/pages/main.page';
+
 
 @Component({
-  imports: [ HeroesModule],
+  // app.ts, dentro de @Component
+  imports: [HeroesModule, DbzModule],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

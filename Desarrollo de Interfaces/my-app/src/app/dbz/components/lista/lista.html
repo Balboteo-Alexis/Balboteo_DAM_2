@@ -1,0 +1,25 @@
+<ul class="list-group">
+  @for (
+    personaje of listaPersonajes;
+    track $index;
+    let i = $index;
+    let esPar = $even;
+    let esImpar = $odd;
+    let esUltimo = $last;
+    let esPrimero = $first
+  ) {
+    <li
+      class="list-group-item"
+      [ngClass]="{
+        'list-group-item-primary': esPrimero,
+        'list-group-item-secondary': esImpar,
+        'list-group-item-danger': esUltimo,
+      }"
+    >
+      <span>{{ personaje.nombre }} - </span>
+      <strong>Fuerza: </strong>
+      <span>{{ personaje.fuerza }}</span>
+      <span> Índice: {{ i }} - Es par: {{ esPar }} - Es el último: {{ esUltimo }}</span>
+    </li>
+  }
+</ul>
