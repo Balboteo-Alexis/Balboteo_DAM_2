@@ -1,9 +1,7 @@
 
 import { Component } from '@angular/core';
-import { Centro } from './centros/centro/centro';
 import { HeroesModule } from './heroes/heroes.module';
 import { DbzModule } from './dbz/dbz.module';
-import { MainPage } from './dbz/pages/main.page';
 
 
 @Component({

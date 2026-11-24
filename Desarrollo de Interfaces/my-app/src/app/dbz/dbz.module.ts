@@ -4,13 +4,11 @@ import { FormsModule } from '@angular/forms';
 
 import { MainPage } from './pages/main.page';
 import { dbzLista } from './components/lista/lista';
-import { addPersonaje } from './components/addPersonaje/addPersonaje';
 
 @NgModule({
   declarations: [
     MainPage,
-    dbzLista,
-    addPersonaje
+    dbzLista
   ],
   imports: [
     CommonModule,

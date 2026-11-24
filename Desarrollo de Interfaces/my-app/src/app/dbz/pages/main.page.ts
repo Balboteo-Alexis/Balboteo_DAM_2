@@ -22,9 +22,5 @@ export class MainPage {
   ];
 
 
-  public annadirPersonaje(pepito: Personaje): void {
-    this.personajes = [...this.personajes, pepito];
-
-  }
 
 }
