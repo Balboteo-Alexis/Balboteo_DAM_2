@@ -1,24 +1,39 @@
-def convertirTemperatura(temperatura_inicial : float, unidad_inicial : str, unidad_final : str) -> float:
-    """Conviete la temperatura de una unidad a otra
-    
-    Params:
-        temperatura_inicial(float): La temperatura que queremos convertir a otra unidad
-        unidad_inicial (str) : La unidad en la que se encuentra la temperatura inicial
-        unidad_final (str) : La unidad a la que queremos convertir la temperatura
-        
-    Returns:
-        (float): La temoeratura inicial convertida de la unidad inicial a la unidad final
-    """
-    temperatura_final= 0
-    
-    if unidad_final == "C":
-        if unidad_final== "F":
-            temperatura_final = (temperatura_inicial * (9/5)) + 32
-        if unidad_final == "K":
-            temperatura_final = temperatura_inicial + 273.15
-    elif unidad_inicial == "F":
-        if unidad_final== "C":
-            temperatura_final = (temperatura_inicial-32) *(5/9)
-        elif unidad_final == "K":
-            temperatura_final = temperatura_final - 273.15
-        
+def convertirTemperatura(temperatura: float, origen: str, destino: str) -> float:
+
+    # Si las unidades son iguales, no necesitamos convertir.
+    if origen == destino:
+        return round(temperatura, 2)
+
+    # Convertimos la temperatura de origen a Celsius.
+    if origen == "C":
+        celsius = temperatura
+
+    elif origen == "F":
+        celsius = (temperatura - 32) * 5 / 9
+
+    elif origen == "K":
+        celsius = temperatura - 273.15
+
+    # Convertimos de Celsius a la unidad de destino.
+    if destino == "C":
+        resultado = celsius
+
+    elif destino == "F":
+        resultado = celsius * 9 / 5 + 32
+
+    elif destino == "K":
+        resultado = celsius + 273.15
+
+    # Devolvemos el resultado redondeado a dos decimales.
+    return round(resultado, 2)
+
+
+# Pruebas de la función.
+if __name__ == "__main__":
+
+    print(convertirTemperatura(10, "F", "C"))
+    print(convertirTemperatura(25, "C", "F"))
+    print(convertirTemperatura(100, "C", "K"))
+    print(convertirTemperatura(300, "K", "C"))
+    print(convertirTemperatura(300, "K", "F"))
+    print(convertirTemperatura(25, "C", "C"))

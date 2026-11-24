@@ -1,26 +1,41 @@
-"""Crea una función llamada comprobarLetraDNI"""
+def comprobarLetraDNI(dni: str) -> bool:
 
-def comprobarLetraDNI (dni: str):
-    
-    correcto = True
-    letra = dni[-1]
-    numeros = dni[0:8]
-    
-    
-    print(letra)
-    print(numeros)
-    
-    if(numeros.isdigit() and len(numeros) == 8) :
-        
-        resto =  int(numeros) % 23
-        
-        list = ["T", "R", "W", "A", "G", "M", "Y", "F", "P", "D", "X", "B", "N", "J", "Z", "S", "Q", "V", "H", "L", "C", "K", "E"]
-        
-        if letra != list[resto] : 
-           
-           correcto =  False 
-        
-    return correcto
+    # Letras del DNI ordenadas según el resto de la división.
+    letras = "TRWAGMYFPDXBNJZSQVHLCKE"
 
-print(comprobarLetraDNI("12345678Z"))
-    
+    # Comprobamos que el DNI tenga 9 caracteres.
+    if len(dni) != 9:
+        return False
+
+    # Separamos los números de la letra.
+    numeros = dni[:8]
+    letra = dni[8].upper()
+
+    # Comprobamos que los primeros 8 caracteres sean dígitos.
+    if not numeros.isdecimal():
+        return False
+
+    # Convertimos la cadena de números a un número entero.
+    numero = int(numeros)
+
+    # Calculamos el resto de dividir el número entre 23.
+    resto = numero % 23
+
+    # Obtenemos la letra que corresponde al resto.
+    letraCorrecta = letras[resto]
+
+    # Comprobamos si ambas letras coinciden.
+    if letra == letraCorrecta:
+        return True
+    else:
+        return False
+
+
+# Pruebas de la función.
+if __name__ == "__main__":
+
+    print(comprobarLetraDNI("12345678Z"))  # True
+    print(comprobarLetraDNI("12345678z"))  # True
+    print(comprobarLetraDNI("12345678A"))  # False
+    print(comprobarLetraDNI("1234567Z"))   # False
+    print(comprobarLetraDNI("1234567AZ"))  # False

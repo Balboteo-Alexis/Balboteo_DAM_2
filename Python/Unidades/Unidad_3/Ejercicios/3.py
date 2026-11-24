@@ -1,35 +1,35 @@
 import math
 
-GENERAL = 0.21
-REDUCIDO = 0.10
-SUPERREDUCIDO = 0.04
+def calcularValorBruto(precio: float, tipoIVA: str) -> float:
 
-def calcularValorBruto(valor_neto : float, tipo_iva : str) -> float:
-    """Calcula el valor bruto de un producto partiendo del valor neto y el tipo de IVA aplicable
+    # Comprobamos qué tipo de IVA debemos aplicar.
+    if tipoIVA == "GENERAL":
+        iva = 0.21
 
-    Params:
-        valor_neto (float): Valor neto del producto, en euros
-        tipo_iva (str): Tipo de IVA aplicable. Solo acepta los valores GENERAL, REDUCIDO Y SUPERREDUCIDO
+    elif tipoIVA == "REDUCIDO":
+        iva = 0.10
 
-    Returns:
-        (float) : Valor bruto del producto tras aplicar el IVA
-    """
-    if valor_neto < 0:
-        raise ValueError("El valor neto no puede ser negativo")
+    elif tipoIVA == "SUPERREDUCIDO":
+        iva = 0.04
 
-    tipo_iva = tipo_iva.lower()
-    if tipo_iva not in ["general", "reducido", "superreducido"]:
-        raise ValueError("El tipo de IVA solo puede ser GENERAL, REDUCIDO o SUPERREDUCIDO")
+    # Calculamos el importe del IVA.
+    importeIVA = precio * iva
 
-    valor_bruto = 0
+    # Sumamos el precio original y el importe del IVA.
+    resultado = precio + importeIVA
 
-    if tipo_iva == "general":
-        valor_bruto = valor_neto * GENERAL + valor_neto
-    elif tipo_iva == "reducido":
-        valor_bruto = valor_neto * REDUCIDO + valor_neto
-    elif tipo_iva == "superreducido":
-        valor_bruto = valor_neto * SUPERREDUCIDO + valor_neto
+    # Redondeamos hacia arriba a dos decimales.
+    # El round intermedio evita pequeños errores de precisión.
+    resultado = math.ceil(round(resultado * 100, 10)) / 100
 
-    return math.ceil(valor_bruto * 100) / 100
+    # Devolvemos el precio final.
+    return resultado
 
-print(calcularValorBruto(17,"general"))
+
+# Pruebas de la función.
+if __name__ == "__main__":
+
+    print(calcularValorBruto(10, "GENERAL"))      # 12.1
+    print(calcularValorBruto(10, "REDUCIDO"))     # 11.0
+    print(calcularValorBruto(10, "SUPERREDUCIDO")) # 10.4
+    print(calcularValorBruto(12.99, "GENERAL"))   # 15.72
