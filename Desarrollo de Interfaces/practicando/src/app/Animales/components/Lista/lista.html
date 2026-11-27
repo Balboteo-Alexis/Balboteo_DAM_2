@@ -1,0 +1,23 @@
+<h2>Listra de animales:</h2>
+
+@for (animal of animales; track $index) {
+
+  <ul>
+
+  Nombre: {{animal.nombre}} <br>
+  Tipo: {{animal.tipo}}<br>
+  Edad: {{animal.edad}} años<br>
+  Peso: {{animal.peso}} Kg<br>
+
+
+
+  </ul>
+
+
+  {{animal}}
+
+
+}
+
+
+<button (click)="annadirAnimal(animal1)">Añadir animal</button>

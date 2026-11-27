@@ -1,0 +1,24 @@
+<h2>Soy un gato</h2>
+
+<ul>
+
+  <li>Nombre: {{nombre}}</li>
+  <li>Tipo: {{tipo}}</li>
+  <li>Edad: {{edad}} años</li>
+  <li>Peso: {{peso}} Kg</li>
+
+  @if (vive){
+    <li>Está vivo</li>
+  }
+  @else {
+    <li>Está muerto</li>
+  }
+
+</ul>
+
+
+
+
+<button (click)="cambiarNombre()" >Cambiar nombre</button>
+
+<button (click)="atropellar()">Atropellar gato</button>
