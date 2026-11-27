@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Animal } from '../../Interfaces/animal';
 
 @Component({
+  Imports : [Animal]
   selector: 'lista',
   templateUrl: 'lista.html',
   styleUrl: 'lista.css',
